@@ -2,7 +2,7 @@
 
 **Robust QR Code Restoration via Adversarial Learning and Attention Mechanisms**
 
-[中文](D:\github\SR_QRCODE\sr_qrcode_github\mine_model_v2\README.md)
+[中文](https://github.com/zhongzhengli13/QRSuperResolutionNet-for-qrcode/blob/main/README.md)
 
 This repository is the official PyTorch implementation of QRSuperResolutionNet v2.0.
 
