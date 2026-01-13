@@ -125,7 +125,7 @@ $$L_{total} = \lambda_{1}L_{pixel} + \lambda_{p}L_{percep} + \lambda_{e}L_{edge}
   title={QR Code Restoration via Adversarial Learning and Attention Mechanisms},
   author={Zhongzheng Li},
   journal={GitHub Repository},
-  year={202}
+  year={2026}
 }
 ```
 
