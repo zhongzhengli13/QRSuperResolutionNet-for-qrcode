@@ -120,8 +120,6 @@ $$L_{total} = \lambda_{1}L_{pixel} + \lambda_{p}L_{percep} + \lambda_{e}L_{edge}
 
 如果您参考了本项目的代码或方法，请引用：
 
-代码段
-
 ```
 @article{QR-SR-GAN-v2,
   title={QR Code Restoration via Adversarial Learning and Attention Mechanisms},
