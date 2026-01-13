@@ -23,8 +23,6 @@
 
 ## 目录结构 (Directory Structure)
 
-Plaintext
-
 ```
 QRSuperResolutionNet/
 ├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)

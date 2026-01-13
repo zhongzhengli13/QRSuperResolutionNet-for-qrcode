@@ -27,8 +27,6 @@ Based on the provided implementation, v2.0 includes the following core technical
 
 ## 📂 Directory Structure
 
-Plaintext
-
 ```
 QRSuperResolutionNet/
 ├── checkpoints_gan/      # Model weights storage (GAN stage)
@@ -51,8 +49,6 @@ QRSuperResolutionNet/
 
 Please organize your data according to the structure below. The code supports `.png` and `.jpg` formats by default.
 
-Plaintext
-
 ```
 dataset_4/
 ├── train/
@@ -73,9 +69,7 @@ Stage 1: Warm-up (Pixel-wise Pre-training)
 
 Train the generator using only L1, Edge, and Perceptual losses to obtain basic restoration capabilities.
 
-Bash
-
-```
+```bash
 # Modify the CONFIG path in train.py before running
 python train.py
 ```
@@ -84,9 +78,7 @@ Stage 2: Adversarial Fine-tuning (GAN)
 
 Load the weights from Stage 1 and enable the discriminator for adversarial training to recover high-frequency textures.
 
-Bash
-
-```
+```bash
 # Modify 'pretrained_model' in train_gan.py to the path saved in Stage 1
 python train_gan.py
 ```
@@ -97,9 +89,7 @@ Batch Evaluation
 
 Evaluate model performance on the validation set. The script automatically calculates decoding rates for LR, Standard SR, and SR with TTA, and statistics for "Recovered" samples.
 
-Bash
-
-```
+```bash
 python evaluate.py
 ```
 
@@ -107,9 +97,7 @@ Single Image Inference
 
 Restore a single image. The result will be saved as a side-by-side comparison.
 
-Bash
-
-```
+```bash
 python test_single.py \
     --img inputs/blurred_qr.png \
     --model checkpoints_gan/gan_generator_epoch70.pth \
@@ -120,7 +108,7 @@ python test_single.py \
 
 ## 📸 Visual Demonstration
 
-*(Place your comparison images here)*
+<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20260113102124804.png" alt="image-20260113102124804" style="zoom:50%;" />
 
 ------
 
@@ -145,8 +133,6 @@ Where $L_{edge}$ utilizes the Sobel operator to calculate gradient differences, 
 ## 📍 Citation
 
 If you find this project useful for your research, please cite:
-
-代码段
 
 ```
 @article{QR-SR-GAN-v2,
