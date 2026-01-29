@@ -25,7 +25,7 @@
 
 ```
 QRSuperResolutionNet/
-├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)（放了一个训练70轮次的pth文件）
+├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)（pth文件已经删除，可以自行训练得出）
 ├── dataset_4/            # 数据集目录 (需包含 train/val 子目录)（本代码中不含对应的数据集，可以自行收集）
 ├── vis_gan/              # 训练过程可视化结果
 ├── dataset.py            # 数据加载器 (含内存预加载与随机旋转增强)
@@ -38,6 +38,12 @@ QRSuperResolutionNet/
 ```
 
 > 使用的公开数据集包含：https://www.kaggle.com/datasets/coledie/qr-codes
+
+> 注意：
+>
+> **输入尺寸**：模型设计的主流输入是 **$64 \times 64$** 像素。
+>
+> **输出尺寸**：经过模型处理后，输出为 **$256 \times 256$** 像素。
 
 ## 使用指南 (Usage)
 
