@@ -25,7 +25,7 @@
 
 ```
 QRSuperResolutionNet/
-├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)
+├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)（放了一个训练70轮次的pth文件）
 ├── dataset_4/            # 数据集目录 (需包含 train/val 子目录)（本代码中不含对应的数据集，可以自行收集）
 ├── vis_gan/              # 训练过程可视化结果
 ├── dataset.py            # 数据加载器 (含内存预加载与随机旋转增强)
