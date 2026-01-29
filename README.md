@@ -139,4 +139,4 @@ $$L_{total} = \lambda_{1}L_{pixel} + \lambda_{p}L_{percep} + \lambda_{e}L_{edge}
 
 ------
 
-**Contact**:  [ZhongzhengLi ](https://github.com/zhongzhengli13/QRSuperResolutionNet-for-qrcode/issues)如有问题，欢迎提 Issue 交流！
+**Contact**:  [ZhongzhengLi ](https://github.com/zhongzhengli13/QRSuperResolutionNet-for-qrcode/issues)如有问题，欢迎提 Issue 交流！或者通过邮箱进行联系 878954714@qq.com。
