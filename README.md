@@ -26,7 +26,7 @@
 ```
 QRSuperResolutionNet/
 ├── checkpoints_gan/      # 模型权重保存目录 (GAN阶段)
-├── dataset_4/            # 数据集目录 (需包含 train/val 子目录)
+├── dataset_4/            # 数据集目录 (需包含 train/val 子目录)（本代码中不含对应的数据集，可以自行收集）
 ├── vis_gan/              # 训练过程可视化结果
 ├── dataset.py            # 数据加载器 (含内存预加载与随机旋转增强)
 ├── discriminator.py      # VGG-Style 判别器定义
@@ -36,6 +36,8 @@ QRSuperResolutionNet/
 ├── evaluate.py           # 评估脚本 (集成 TTA 与形态学后处理)
 └── test_single.py        # 单张图像推理演示
 ```
+
+> 使用的公开数据集包含：https://www.kaggle.com/datasets/coledie/qr-codes
 
 ## 使用指南 (Usage)
 
@@ -131,4 +133,4 @@ $$L_{total} = \lambda_{1}L_{pixel} + \lambda_{p}L_{percep} + \lambda_{e}L_{edge}
 
 ------
 
-**Contact**: @ [ZhongzhengLi ](https://github.com/zhongzhengli13/QRSuperResolutionNet-for-qrcode/issues)如有问题，欢迎提 Issue 交流！
+**Contact**:  [ZhongzhengLi ](https://github.com/zhongzhengli13/QRSuperResolutionNet-for-qrcode/issues)如有问题，欢迎提 Issue 交流！
