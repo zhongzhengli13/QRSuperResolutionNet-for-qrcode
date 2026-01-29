@@ -116,7 +116,7 @@ python test_single.py \
 
 $$L_{total} = \lambda_{1}L_{pixel} + \lambda_{p}L_{percep} + \lambda_{e}L_{edge} + \lambda_{b}L_{bin} + \lambda_{adv}L_{GAN}$$
 
-其中 $L_{edge}$ 利用 Sobel 算子计算梯度差，$L_{bin}$ 惩罚非 0/1 的中间灰度值 ($x(1-x)$)，强制网络输出二值化图像。
+其中 $L_{edge}$ 利用 Sobel 算子计算梯度差，$L_{bin} $ 惩罚非 0/1 的中间灰度值 ($x(1-x) $)，强制网络输出二值化图像。
 
 ## 引用 (Citation)
 
